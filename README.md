@@ -9,6 +9,8 @@ The program can then be run using the sample command
 `$ java -cp ./json-simple-1.1.jar:. FindCustomers CustomerList.txt`
 
 Usage: java FindCustomer [input] [output]
+
   input -- input file name
+  
   output -- optional file name, defaults to output.txt
 
