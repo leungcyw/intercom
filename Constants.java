@@ -26,7 +26,7 @@ public class Constants {
 
   // Used in writeFile method
   public static final String OPEN_SQUARE = "[\n";
-  public static final String ENTRY = "{ \"user_id\": %d, \"name\": %s }\n";
+  public static final String ENTRY = "{ \"user_id\": %d, \"name\": \"%s\" }\n";
   public static final String CLOSE_SQUARE = "]";
 
   // Used in main method
