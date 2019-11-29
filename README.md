@@ -12,5 +12,5 @@ Usage: java FindCustomer [input] [output]
 
   input -- input file name
   
-  output -- optional file name, defaults to output.txt
+  output -- optional output file name, defaults to output.txt
 
