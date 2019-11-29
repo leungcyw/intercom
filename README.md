@@ -1,6 +1,6 @@
 # intercom
 
-Clone the repository onto your local machine. Inside the directory, compile using the command:
+Clone the repository onto your local machine. Inside the directory, compile using the command:\n
 `$ javac -cp ./json-simple-1.1.jar:. FindCustomers.java`
 
 The program can then be run using the sample command
