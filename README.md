@@ -1,4 +1,4 @@
-# intercom
+# FindCustomers
 
 Clone the repository onto your local machine. Inside the directory, compile using the command:
 
