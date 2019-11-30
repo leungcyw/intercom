@@ -31,7 +31,7 @@ public class Constants {
 
   // Used in main method
   public static final String ERROR = "Usage: java FindCustomer [input] [output]\n" +
-                                     "  input -- input file name\n" +
+                                     "  input -- input file (JSON formatted) name\n" +
                                      "  output -- optional output file name, defaults to output.txt";                                   
   public static final int OUTPUT_LEN = 2;
   public static final String DEFAULT_NAME = "output.txt";  
