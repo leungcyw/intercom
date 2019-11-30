@@ -10,7 +10,7 @@ The program can then be run using the sample command
 
 Usage: java FindCustomer [input] [output]
 
-  input -- input file name
+  input -- input file name, JSON formatted
   
   output -- optional output file name, defaults to output.txt
 
