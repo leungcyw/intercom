@@ -49,21 +49,20 @@ public class FindCustomers {
     double lon2 = Constants.OFFICE_LONG;
     double lat2 = Constants.OFFICE_LAT;
 
-    // Uses the Vincenty formula to find the central angle
+    // Uses the haversine formula to calculate distance
     double deltaLon = Math.abs(lon1 - lon2);
-    double num1 = Math.cos(lat2) * Math.sin(deltaLon);
+    double deltaLat = Math.abs(lat1 - lat2);
+    double num1 = Math.sin(deltaLat/Constants.SQUARE);
     num1 = Math.pow(num1, Constants.SQUARE);
-    double num2 = (Math.cos(lat1) * Math.sin(lat2)) - 
-                  (Math.sin(lat1) * Math.cos(lat2) * Math.cos(deltaLon));
+    double num2 = Math.sin(deltaLon/Constants.SQUARE);
     num2 = Math.pow(num2, Constants.SQUARE);
+    num2 = num2 * Math.cos(lat1) * Math.cos(lat2);
     double num = num1 + num2;
     num = Math.sqrt(num);
-    double dem = (Math.sin(lat1) * Math.sin(lat2)) +
-                 (Math.cos(lat1) * Math.cos(lat2) * Math.cos(deltaLon));
-
-    double deltaSig = Math.atan(num / dem);
-    double dist = deltaSig * Constants.RADIUS; // Multiple angle with radius
-    return (dist < Constants.MAX); // Compares it to max distance
+    num = Math.asin(num);
+    num *= Constants.SQUARE;
+    double dist = num * Constants.RADIUS;    
+    return (dist <= Constants.MAX); // Compares it to max distance
   }
 
   /*
