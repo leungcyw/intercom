@@ -1,4 +1,4 @@
-# intercom
+# FindCustomers
 
 Clone the repository onto your local machine. Inside the directory, compile using the command:
 
@@ -10,7 +10,7 @@ The program can then be run using the sample command
 
 Usage: java FindCustomer [input] [output]
 
-  input -- input file name
+  input -- name of JSON formatted input file
   
   output -- optional output file name, defaults to output.txt
 
